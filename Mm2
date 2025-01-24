@@ -4181,6 +4181,7 @@ local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Name = "VOID"
 ScreenGui.Parent = game:GetService("CoreGui")
 
+-- Main UI Frame
 local MainFrame = Instance.new("Frame")
 MainFrame.Size = UDim2.new(0, 400, 0, 300)
 MainFrame.Position = UDim2.new(0.5, -200, 0.5, -150)
@@ -4188,10 +4189,12 @@ MainFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 MainFrame.BorderSizePixel = 0
 MainFrame.Parent = ScreenGui
 
+-- Rounded corners for the frame
 local UICorner = Instance.new("UICorner")
 UICorner.CornerRadius = UDim.new(0, 10)
 UICorner.Parent = MainFrame
 
+-- Title of the UI
 local Title = Instance.new("TextLabel")
 Title.Size = UDim2.new(1, 0, 0, 50)
 Title.BackgroundTransparency = 1
@@ -4201,6 +4204,7 @@ Title.TextSize = 20
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.Parent = MainFrame
 
+-- Button 1: Activate ESP
 local Button1 = Instance.new("TextButton")
 Button1.Size = UDim2.new(0, 180, 0, 40)
 Button1.Position = UDim2.new(0.1, 0, 0.3, 0)
@@ -4211,6 +4215,7 @@ Button1.TextSize = 14
 Button1.TextColor3 = Color3.fromRGB(255, 255, 255)
 Button1.Parent = MainFrame
 
+-- Button 2: Enable Auto-Shoot
 local Button2 = Instance.new("TextButton")
 Button2.Size = UDim2.new(0, 180, 0, 40)
 Button2.Position = UDim2.new(0.1, 0, 0.5, 0)
@@ -4221,6 +4226,7 @@ Button2.TextSize = 14
 Button2.TextColor3 = Color3.fromRGB(255, 255, 255)
 Button2.Parent = MainFrame
 
+-- Button 3: Player Teleport
 local Button3 = Instance.new("TextButton")
 Button3.Size = UDim2.new(0, 180, 0, 40)
 Button3.Position = UDim2.new(0.1, 0, 0.7, 0)
